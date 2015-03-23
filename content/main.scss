@@ -36,18 +36,17 @@ html * {
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #333;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #333;
     text-shadow: none;
 }
 
@@ -84,7 +83,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 18px/28px "Meslo LG M", "DejaVu Sans Mono", "Menlo", "Liberation Sans Mono", mono;
 }
 
 .wrapper {
@@ -92,28 +91,10 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.light .header-container {
-    border-bottom-color: $base3;
-}
-.dark .header-containter {
-    border-bottom-color: $base03;
-}
 .header-container {
     border-bottom: 20px solid;
 }
 
-.light .footer-container,
-.light .main aside {
-    border-bottom-color: $base3;
-}
-.dark .footer-container,
-.dark .main aside {
-    border-bottom-color: $base03;
-}
 .footer-container,
 .main aside {
     border-top: 20px solid;
@@ -121,10 +102,16 @@ body {
 
 .dark .header-container,
 .dark .footer-container,
-.dark .main aside { background: $base02; }
+.dark .main aside {
+    background: $base02;
+    border-bottom-color: $base03;
+}
 .light .header-container,
 .light .footer-container,
-.light .main aside { background: $base2; }
+.light .main aside {
+    background: $base2;
+    border-top-color: $base03;
+}
 
 .title {
     color: white;
@@ -139,7 +126,8 @@ nav ul {
     padding: 0;
     list-style-type: none;
 }
-
+.dark nav a { background: $base03; }
+.light nav a { background: $base3; }
 nav a {
     display: block;
     margin-bottom: 10px;
@@ -148,15 +136,9 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
-    color: white;
-    background: $base03;
 }
 
-nav a:hover,
-nav a:visited {
-    color: white;
-}
+dt { font-weight: bold; }
 
 nav a:hover {
     text-decoration: underline;
@@ -191,24 +173,6 @@ nav a:hover {
 .ie7 .title {
     padding-top: 20px;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
