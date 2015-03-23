@@ -28,7 +28,10 @@ $green:     #859900;
 }
 /* light is default mode, so pair with general html definition */
 html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+.dark  {
+    @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
+    @include accentize($orange);
+}
 html * {
     color-profile: sRGB;
     rendering-intent: auto;
@@ -113,10 +116,6 @@ body {
     border-top-color: $base03;
 }
 
-.title {
-    color: white;
-}
-
 /* ==============
     MOBILE: Menu
    ============== */
@@ -144,6 +143,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
+h1.title { color: $yellow; }
+
 /* ==============
     MOBILE: Main
    ============== */
@@ -157,12 +158,10 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
     padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
