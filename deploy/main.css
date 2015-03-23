@@ -1,0 +1,232 @@
+html, .light {
+  background-color: #fdf6e3;
+  color: #657b83; }
+  html *, .light * {
+    color: #657b83; }
+    html h1, html h2, html h3, html h4, html h5, html h6, .light h1, .light h2,
+    .light h3, .light h4, .light h5, .light h6 {
+      color: #586e75;
+      border-color: #657b83; }
+      html a, html a:active, html a:visited, .light a, .light a:active, .light a:visited {
+        color: #586e75; }
+
+.dark {
+  background-color: #002b36;
+  color: #839496; }
+  .dark * {
+    color: #839496; }
+    .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+      color: #93a1a1;
+      border-color: #839496; }
+      .dark a, .dark a:active, .dark a:visited {
+        color: #93a1a1; }
+        .dark a, .dark a:active, .dark a:visited, .dark code.url {
+          color: #cb4b16; }
+          .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+            color: #cb4b16; }
+
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto; }
+
+  html {
+    font-size: 1em;
+    line-height: 1.4; }
+
+    ::-moz-selection {
+      background: #333;
+      text-shadow: none; }
+
+      ::selection {
+        background: #333;
+        text-shadow: none; }
+
+        hr {
+          display: block;
+          height: 1px;
+          border: 0;
+          border-top: 1px solid #ccc;
+          margin: 1em 0;
+          padding: 0; }
+
+          audio, canvas, iframe, img, svg, video {
+            vertical-align: middle; }
+
+            fieldset {
+              border: 0;
+              margin: 0;
+              padding: 0; }
+
+              textarea {
+                resize: vertical; }
+
+                body {
+                  font: 18px / 28px "Meslo LG M", "DejaVu Sans Mono", "Menlo", "Liberation Sans Mono",
+                                    mono; }
+
+                  .wrapper {
+                    width: 90%;
+                    margin: 0 5%; }
+
+                    .header-container {
+                      border-bottom: 20px solid; }
+
+                      .footer-container, .main aside {
+                        border-top: 20px solid; }
+
+                        .dark .header-container, .dark .footer-container, .dark .main aside {
+                          background: #073642;
+                          border-bottom-color: #002b36; }
+
+                          .light .header-container, .light .footer-container, .light .main aside {
+                            background: #eee8d5;
+                            border-top-color: #002b36; }
+
+                            nav ul {
+                              margin: 0;
+                              padding: 0;
+                              list-style-type: none; }
+
+                              .dark nav a {
+                                background: #002b36; }
+
+                                .light nav a {
+                                  background: #fdf6e3; }
+
+                                  nav a {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    padding: 15px 0;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    font-weight: bold; }
+
+                                    dt {
+                                      font-weight: bold; }
+
+                                      nav a:hover {
+                                        text-decoration: underline; }
+
+                                        h1.title {
+                                          color: #b58900; }
+
+                                          .main {
+                                            padding: 30px 0; }
+
+                                            .main article h1 {
+                                              font-size: 2em; }
+
+                                              .main aside {
+                                                padding: 0px 5% 10px; }
+
+                                                .footer-container footer {
+                                                  padding: 20px 0; }
+
+                                                  .ie7 .title {
+                                                    padding-top: 20px; }
+
+                                                    @media only screen and (min-width: 480px) {
+                                                      nav a {
+                                                        float: left;
+                                                        width: 27%;
+                                                        margin: 0 1.7%;
+                                                        padding: 25px 2%;
+                                                        margin-bottom: 0;   }
+                                                        nav li:first-child a {
+                                                          margin-left: 0;   }
+                                                          nav li:last-child a {
+                                                            margin-right: 0;   }
+                                                            nav ul li {
+                                                              display: inline;   }
+                                                              .oldie nav a {
+                                                                margin: 0 0.7%;   }
+}
+
+@media only screen and (min-width: 768px) {
+  .header-container, .main aside {
+    -webkit-box-shadow: 0 5px 10px #586e75;
+    -moz-box-shadow: 0 5px 10px #586e75;
+    box-shadow: 0 5px 10px #586e75;   }
+    .title {
+      float: left;   }
+      nav {
+        float: right;
+        width: 38%;   }
+        .main article {
+          float: left;
+          width: 57%;   }
+          .main aside {
+            float: right;
+            width: 28%;   }
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 1026px;
+    margin: 0 auto;   }
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+  .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; }
+
+    .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto; }
+
+      .invisible {
+        visibility: hidden; }
+
+        .clearfix:before, .clearfix:after {
+          content: " ";
+          display: table; }
+
+          .clearfix:after {
+            clear: both; }
+
+            .clearfix {
+              *zoom: 1; }
+
+              @media print {
+                *, *:before, *:after {
+                  background: transparent !important;
+                  color: #000 !important;
+                  box-shadow: none !important;
+                  text-shadow: none !important;   }
+                  a, a:visited {
+                    text-decoration: underline;   }
+                    a[href]:after {
+                      content: " (" attr(href) ")";   }
+                      abbr[title]:after {
+                        content: " (" attr(title) ")";   }
+                        a[href^="#"]:after, a[href^="javascript:"]:after {
+                          content: "";   }
+                          pre, blockquote {
+                            border: 1px solid #999;
+                            page-break-inside: avoid;   }
+                            thead {
+                              display: table-header-group;   }
+                              tr, img {
+                                page-break-inside: avoid;   }
+                                img {
+                                  max-width: 100% !important;   }
+                                  p, h2, h3 {
+                                    orphans: 3;
+                                    widows: 3;   }
+                                    h2, h3 {
+                                      page-break-after: avoid;   }
+}
